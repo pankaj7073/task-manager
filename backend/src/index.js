@@ -11,7 +11,7 @@ app.use(cors());
 app.use("/api/v1", createTask);
 
 app.get("/", function (req, res) {
-  res.send("Hello World!");
+  res.send("Hello World!, please search add after url /data for get all data");
 });
 
 app.use(express.static(path.join(__dirname, "../frontend/build")));
